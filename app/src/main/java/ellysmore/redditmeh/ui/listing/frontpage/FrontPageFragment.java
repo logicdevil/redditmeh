@@ -41,7 +41,7 @@ public class FrontPageFragment
         ButterKnife.inject(this, mRootView);
         setUpAdapter();
         setUpSwipeRefreshLayout();
-        setUpListScrollListener();
+        setUpListScrollListenerForRefresh();
         fetchFrontPageListing();
         return mRootView;
     }

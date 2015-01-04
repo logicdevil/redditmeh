@@ -41,10 +41,6 @@ public class NavigationActivity extends BaseActivity implements
         }
     }
 
-    private int getContainerId() {
-        return R.id.content_frame;
-    }
-
     @Override
     public void onItemClick(NavItems navItems) {
         BaseFragmentWithSwipeRefreshListener fragment = null;
@@ -80,5 +76,8 @@ public class NavigationActivity extends BaseActivity implements
             getSupportActionBar().setTitle(navItems.getTitleResId());
             replaceFragment(fragment, null, getContainerId());
         }
+    }
+    private int getContainerId() {
+        return R.id.content_frame;
     }
 }

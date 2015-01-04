@@ -19,7 +19,7 @@ public class BaseFragmentWithSwipeRefreshListener extends BaseFragment
     @InjectView(R.id.swipe_container)
     protected SwipeRefreshLayout mSwipeRefreshLayout;
 
-    protected void setUpListScrollListener() {
+    protected void setUpListScrollListenerForRefresh() {
         mList.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {

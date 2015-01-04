@@ -58,7 +58,7 @@ public class SubredditFragment
         ButterKnife.inject(this, mRootView);
         setUpAdapter();
         setUpSwipeRefreshLayout();
-        setUpListScrollListener();
+        setUpListScrollListenerForRefresh();
         fetchSubredditListing();
         return mRootView;
     }
